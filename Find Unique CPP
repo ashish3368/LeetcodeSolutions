@@ -1,0 +1,14 @@
+int findUnique(int *arr, int size){
+    int ans = 0;
+    for(int i = 0; i<size; i++){
+        ans =  ans^arr[i];
+    }
+    return ans;
+}
+
+
+
+
+// THIS WILL PRINT UNIQUE ELEMENT IN AN ARRAY WHOSE OCUURANCE IS UNIQUE
+//[2,2,5,4,8,96,8,4]
+// OUTPUT WILL BE - 5
